@@ -1,0 +1,11 @@
+  <h1>位置情報取得サンプル2</h1>
+
+  <div id="lat">緯度：</div>
+  <div id="lon">経度：</div>
+
+  <div id="map" style="width:600px; height:600px"></div>
+
+   <script src="https://maps.googleapis.com/maps/api/js?key=<%= Rails.application.credentials.geo[:google_maps_api] %>"></script>
+
+  <%= javascript_pack_tag 'demo/index2' %> 
+    
